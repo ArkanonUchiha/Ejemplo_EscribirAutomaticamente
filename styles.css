@@ -1,0 +1,31 @@
+body{
+	background: steelblue;
+	font-family: monospace;
+}
+.contenedor{
+	margin:auto;
+	display: table;
+}
+h1{
+	float: left;
+	color: white;
+	position: relative;
+}
+/* EFECTO USANDO CSS - EL NUMERO 29 INDICA EL NUMERO DE CARACTERES QUE TIENE EL H1 */
+h1 span{
+	position: absolute;
+	right: 0;
+	width: 0;
+	background: steelblue;
+	border-left: 1px solid #000;
+	animation: maquina 5s infinite alternate steps(30);
+}
+@keyframes maquina{
+	from{
+		width: 100%;
+	}
+	to {
+		width: 0;
+	}
+
+}
